@@ -1,0 +1,153 @@
+bg-primary-app {
+    background-color: #001845;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Background to match the dark theme */
+.custom-form-container {
+    background-color: #23222e; /* Deep dark purple/grey */
+    color: #ffffff;
+    font-family: 'Inter', sans-serif; /* Clean sans-serif used in ui designs */
+}
+
+.form-wrapper {
+    max-width: 440px; /* Fits nicely next to your image hero */
+}
+
+/* Typography styling */
+.form-title {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.form-subtitle {
+    font-size: 0.9rem;
+    color: #a19fad;
+    margin-bottom: 2rem;
+}
+
+.accent-link {
+    color: #8c7ae6; /* Subtle purple matching the screenshot */
+    text-decoration: none;
+}
+
+.accent-link:hover {
+    color: #a29bfe;
+}
+
+/* Input Fields styling */
+.custom-input {
+    background-color: #312f40 !important; /* Lighter background for elements */
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #ffffff !important;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+}
+
+.custom-input::placeholder {
+    color: #69667a;
+}
+
+/* Adds a purple border focus ring to input fields */
+.custom-input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 0.2rem rgba(108, 92, 231, 0.25);
+}
+
+/* Password Eye Toggle Icon Position */
+.password-toggle-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #69667a;
+    cursor: pointer;
+}
+
+/* Custom Checkbox Styling */
+.custom-checkbox .form-check-input {
+    background-color: #312f40;
+    border-color: #69667a;
+}
+
+.custom-checkbox .form-check-input:checked {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+.custom-checkbox .form-check-label {
+    font-size: 0.85rem;
+    color: #a19fad;
+}
+
+/* Main Action Button */
+.btn-primary-custom {
+    background-color: #6c5ce7; /* The purple button theme */
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #5b4cc4;
+    color: #ffffff;
+}
+
+/* Or Register With Divider Line */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #555366;
+    font-size: 0.8rem;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #3c3a4f;
+}
+
+.divider:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .75em;
+}
+
+/* Social Buttons Styling */
+.btn-outline-custom {
+    background-color: transparent;
+    border: 1px solid #3c3a4f;
+    color: #ffffff;
+    padding: 0.65rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: #312f40;
+    color: #ffffff;
+}

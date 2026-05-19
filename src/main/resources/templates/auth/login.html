@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{auth/head.html}"></head>
+<body>
+
+<div class="container-fluid min-vh-100 d-flex p-0 bg-primary-app " >
+    <div class="row g-0 flex-grow-1 w-100">
+
+        <!-- Image Side -->
+        <div class="col-md-6 d-none d-md-block">
+            <img th:src="@{/images/purple-desert-storm-stockcake.jpg.webp}"
+                 class="w-100 h-100 object-fit-cover"
+                 alt="Image illustration">
+        </div>
+
+        <!-- Form Side -->
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center p-5 custom-form-container">
+            <div class="w-100 px-1 px-md-2 form-wrapper">
+                <h2 class="form-title">Create an account</h2>
+                <p class="form-subtitle">Already have an account? <a href="/login" class="accent-link">Log in</a></p>
+
+                <form action="" method="">
+                    <div class="row g-3 mb-3">
+                        <div class="col-6 mb-3">
+                            <input type="text"
+                                   class="form-control custom-input"
+                                   placeholder="First name">
+                        </div>
+
+                        <div class="col-6 mb-3">
+                            <input type="text"
+                                   class="form-control custom-input"
+                                   placeholder="Last name">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email"
+                                   class="form-control custom-input"
+                                   placeholder="Email">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="tel"
+                                   class="form-control custom-input"
+                                   placeholder="Phone number">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="password"
+                                   class="form-control custom-input"
+                                   placeholder="Password">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="password"
+                                   class="form-control custom-input"
+                                   placeholder="Confirm password">
+                        </div>
+
+                        <div class="form-check mb-4 custom-checkbox">
+                            <input class="form-check-input" type="checkbox" id="terms" checked>
+                            <label class="form-check-label" for="terms">
+                                I agree to the
+                                <a href="#" class="accent-link text-decoration-underline">Terms & Conditions</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-custom w-100 mb-4">Create account</button>
+
+                        <div class="divider mb-4">
+                            <span>Or register with</span>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-custom w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+                                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                                        <path fill="#4285F4" d="M46.5 24c0-1.55-.15-3.24-.47-4.77H24v9.03h12.75c-.55 2.97-2.22 5.48-4.75 7.18l7.38 5.72C43.69 37.14 46.5 31.22 46.5 24z"/>
+                                        <path fill="#FBBC05" d="M10.54 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.98-6.19z"/>
+                                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.38-5.72c-2.11 1.41-4.8 2.28-8.51 2.28-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                                    </svg>
+                                    Google
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-custom w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.202-.11 2.261-1.258c1.06-1.147.933-2.39.942-2.43M14.65 14.124l-1.614-2.32c-.3-.434-.148-.765.13-.993 1.9-1.557 2.108-4.52.05-5.905-.86-.577-2.253-.137-2.97.23-.717.368-1.79.368-2.507 0-.717-.367-2.11-.807-2.97-.23-2.058 1.385-1.85 4.348.05 5.905.278.228.43.559.13.993l-1.614 2.32C1.573 16.326 3.6 16.03 4.885 14.8c1.11-.963 2.18-.963 3.29 0 1.285 1.23 3.312 1.527 4.86 -.676"/>
+                                    </svg>
+                                    Apple
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
