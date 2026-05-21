@@ -52,4 +52,9 @@ public class AppController {
         return "user/home";
     }
 
+    @GetMapping("/verification")
+    public String verification() {
+        return "auth/OTP-Verification";
+    }
+
 }

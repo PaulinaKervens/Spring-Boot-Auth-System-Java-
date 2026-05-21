@@ -151,3 +151,17 @@ poppins {
     background-color: #312f40;
     color: #ffffff;
 }
+
+.style-otp {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+}
+
+.text-color {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #23222e;
+}
+

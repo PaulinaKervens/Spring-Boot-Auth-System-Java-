@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{auth/head.html}"></head>
+<body>
+    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center custom-form-container">
+        <div class="card p-5 bg-none">
+            <div class="card-body"> <!-- Added card-body for standard padding -->
+                <div class="pb-3 bg-none">
+                    <p class="text-color">Let's verify it's you.</p>
+                    <div th:if="${verified_by_email}"> <!-- Changed # to $ for variable expression -->
+                        <p class="text-color">We emailed you at your email account <span th:text="${email_contacted}"></span>.</p>
+                    </div>
+                    <div th:if="${verified_by_phone}">
+                        <p class="text-color">We sent an SMS to your phone at <span th:text="${phone_number_contacted}"></span>.</p>
+                    </div>
+                </div>
+
+
+                <div class="">
+                    <form action="" method="post">
+                        <div class="d-flex justify-content-center gap-2 mb-3">
+                            <input class="form-control text-center style-otp custom-input" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input class="form-control text-center style-otp custom-input" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input class="form-control text-center style-otp custom-input" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input class="form-control text-center style-otp custom-input" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input class="form-control text-center style-otp custom-input" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input class="form-control text-center style-otp custom-input" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span>Resend code</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button type="submit" class="btn btn-primary-custom w-100 mb-4 pl-2 pr-2">Verify</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
