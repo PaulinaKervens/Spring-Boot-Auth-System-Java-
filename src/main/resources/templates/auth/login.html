@@ -22,13 +22,19 @@
                 <form action="login" method="post">
                     <div class="row g-3 mb-3">
                         <div class="mb-3">
-                            <input type="text" class="form-control custom-input" placeholder="Email or Username">
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control custom-input" placeholder="Password">
+                            <input type="text" name="email" class="form-control custom-input" placeholder="Email or Username">
                         </div>
 
-                        <button type="submit" class="btn btn-primary-custom w-100 mb-4">Login</button>
+                        <div class="mb-3">
+                            <input type = "password"
+                                   name = "password"
+                                   class = "form-control custom-input"
+                                   placeholder = "Password">
+                        </div>
+
+                        <button type="submit" name="login_button"
+                                class="btn btn-primary-custom w-80 mb-3">Login
+                        </button>
 
                         <div class="divider mb-4">
                             <span>Or Login with</span>

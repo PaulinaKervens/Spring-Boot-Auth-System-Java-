@@ -1,26 +1,17 @@
 package com.kerv.SpringBootAuthSystem.controller;
 
-import com.kerv.SpringBootAuthSystem.repository.UserDAOInterface;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 
 /**
  *
  */
 @Controller         // To return a Html page
+@RequestMapping("/")
 public class AppController {
-    private UserDAOInterface userDAOInterface;
-
-    /**
-     *
-     * @param userDAOInterface
-     */
-    public AppController(UserDAOInterface userDAOInterface) {
-        this.userDAOInterface = userDAOInterface;
-    }
-
 
     /**
      * Method that print the login.html page, the start mapping point.
@@ -32,29 +23,10 @@ public class AppController {
         return "auth/login";     // Return the index.html page
     }
 
-    @GetMapping("/log-in")
-    public String home() {
-        return "redirect:/";
-    }
-
-    @GetMapping("/register")
-    public String register(Model model) {
-        return "auth/register";
-    }
-
-    @GetMapping("/dashboard")
-    public String dashboard(Model model) {
-        return "auth/register";
-    }
-
     @GetMapping("/user/home")
     public String user_home() {
         return "user/home";
     }
 
-    @GetMapping("/verification")
-    public String verification() {
-        return "auth/OTP-Verification";
-    }
 
 }
